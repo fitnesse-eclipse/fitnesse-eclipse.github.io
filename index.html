@@ -1,63 +1,179 @@
----
----
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ site.title }}</title>
-	<meta name="keywords" content="{{ site.keywords }}">
-	<meta name="description" content="{{ site.description }}">
+  <title>FitNesse Eclipse</title>
+	<meta name="keywords" content="FitNesse, fitnesse-editor, fitnesse-eclipse, fit, github, eclipse">
+	<meta name="description" content="Eclipse plugin for FitNesse">
   <link rel="stylesheet" href="combo.css">
   <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-  {% if site.favicon %}<link rel="shortcut icon" href="{{ site.favicon }}" type="image/x-icon">{% endif %}
-	{% if site.touch_icon %}<link rel="apple-touch-icon" href="{{ site.touch_icon }}">{% endif %}
+  <link rel="shortcut icon" href="img/fitnesse-eclipse.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/fitnesse-eclipse-touch.png">
 </head>
 <body>
+<span id="forkongithub">
+  <a href="https://github.com/fitnesse-eclipse/fitnesse-eclipse" class="bg-green" target="_blank">
+    Fork me on GitHub
+  </a>
+</span>
   <div id="main">
-
     <nav><ul>
-      {% for node in site.posts reversed %}
-        {% capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
-        <li class="p-{{id}}"><a href="#{{id}}">{{node.title}}</a></li>
-      {% endfor %}
+      
+        
+        <li class="p-intro"><a href="#intro">Intro</a></li>
+      
+        
+        <li class="p-installation"><a href="#installation">Installation</a></li>
+      
+        
+        <li class="p-features"><a href="#features">Features</a></li>
+      
+        
+        <li class="p-releases"><a href="#releases">Releases</a></li>
+      
+        
+        <li class="p-development"><a href="#development">Development</a></li>
+      
     </ul></nav>
 
 
-    {% for page in site.posts reversed %}
-      {% capture id %}{{ page.id | remove:'/' | downcase }}{% endcapture %}
-      <div id="{{id}}" class="section p-{{id}}">
-        {% if page.icon %}
-        <div class="subtlecircle sectiondivider imaged">
-          <img src="{{page.icon}}" alt="section icon" />
-          <h5 class="icon-title">{{ page.title }}</h5>
+    
+      
+      <div id="intro" class="section p-intro">
+        
+        <div class="container center">
+          <p><img src="img/fitnesse-eclipse.png" /></p>
+
+<h1 id="fitnesse-eclipse-plugin">FitNesse Eclipse Plugin</h1>
+<p>This plugin provides <a href="http://fitnesse.org" target="_blank">FitNesse</a> editing capabilities from within the eclipse workspace.</p>
+
+<p>See all the <a href="#features">features</a></p>
+
         </div>
-        {% elsif page.fa-icon %}
+      </div>
+    
+      
+      <div id="installation" class="section p-installation">
+        
         <div class="subtlecircle sectiondivider faicon">
           <span class="fa-stack">
             <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-{{ page.fa-icon }} fa-stack-1x"></i>
+            <i class="fa fa-download fa-stack-1x"></i>
           </span>
-          <h5 class="icon-title">{{ page.title }}</h5>
+          <h5 class="icon-title">Installation</h5>
         </div>
-        {% endif %}
-        <div class="container {{ page.style }}">
-          {{ page.content }}
+        
+        <div class="container center">
+          <h2 id="plugin-installation">Plugin Installation</h2>
+<p>This plugin can be installed from the <a href="http://marketplace.eclipse.org/" target="_blank">Eclipse Marketplace</a> or via following update site:</p>
+
+<!-- Stable (Recommended) - http://fitnesse-eclipse.github.io/stable -->
+
+<p>Nightly (Unstable) - http://fitnesse-eclipse.github.io/nightly</p>
+
+<h2 id="requirements">Requirements</h2>
+<p>Java SE 1.7</p>
+
+<p>Java Developer Tools (Optional)</p>
+
         </div>
       </div>
-    {% endfor %}
+    
+      
+      <div id="features" class="section p-features">
+        
+        <div class="subtlecircle sectiondivider faicon">
+          <span class="fa-stack">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-bars fa-stack-1x"></i>
+          </span>
+          <h5 class="icon-title">Features</h5>
+        </div>
+        
+        <div class="container center">
+          <h3 id="syntax-highlighting">Syntax Highlighting</h3>
+
+<h3 id="validation">Validation</h3>
+
+        </div>
+      </div>
+    
+      
+      <div id="releases" class="section p-releases">
+        
+        <div class="subtlecircle sectiondivider faicon">
+          <span class="fa-stack">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-newspaper-o fa-stack-1x"></i>
+          </span>
+          <h5 class="icon-title">Releases</h5>
+        </div>
+        
+        <div class="container center">
+          
+<h4><strong>Release 1.0 (Unreleased)</strong></h4>
+
+<p><strong>Validation</strong> - !Include and Fixture class Validation</p>
+
+<p><strong>Global Key Bindings</strong> - Key bindings will are now scoped within the whole workspace.  Previously Open FitNesse (Ctrl+Shift+Z) only used to work once you were in the editor.</p>
+
+<p><strong>Menu Changes</strong> - The Global FitNesse menu has now gone.</p>
+
+<p><strong>FitNesseRoot Configuration</strong> - The FitNesseRoot directory can now be configured in the preference page.</p>
+
+<p><strong>Maven/Tycho</strong> - The build has now been converted to a maven/tycho, allowing the plugin to be built more easily by our build server.</p>
+
+
+        </div>
+      </div>
+    
+      
+      <div id="development" class="section p-development">
+        
+        <div class="subtlecircle sectiondivider faicon">
+          <span class="fa-stack">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-code fa-stack-1x"></i>
+          </span>
+          <h5 class="icon-title">Development</h5>
+        </div>
+        
+        <div class="container center">
+          <h4 id="development-is-carried-out-on-githubhttpsgithubcomfitnesse-eclipsefitnesse-eclipsetargetblank-view-search-and-raise-any-issueshttpsgithubcomfitnesse-eclipsefitnesse-eclipseissuestargetblank-you-come-across"><em>Development is carried out on <a href="https://github.com/fitnesse-eclipse/fitnesse-eclipse" target="_blank">GitHub</a>, view, search and raise any <a href="https://github.com/fitnesse-eclipse/fitnesse-eclipse/issues" target="_blank">issues</a> you come across.</em></h4>
+
+<p><a href="https://circleci.com/gh/fitnesse-eclipse/fitnesse-eclipse" target="_blank"><img src="https://circleci.com/gh/fitnesse-eclipse/fitnesse-eclipse.png?style=shield" alt="Circle CI" /></a></p>
+
+        </div>
+      </div>
+    
 
 
     <div id="footer" class="section text-white">
       <div class="container">
-        {% capture foottext %} {% include footer.md %} {% endcapture %}
-        {{ foottext | markdownify }}
+        
+        <p>Copyright © 2014 FitNesse Eclipse </p>
+
       </div>
     </div>
   </div>
 
-{% include analytics.html %}
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-56774387-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
 </body>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="site.js"></script>

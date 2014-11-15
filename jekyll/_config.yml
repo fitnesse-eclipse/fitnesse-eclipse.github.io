@@ -15,14 +15,14 @@ highlighter: pygments
 
 
 ### content configuration ###
-title:       "SinglePaged - Title: Edit me in _config.yml!"
-keywords:    "SinglePaged, jekyll, template, github, blog, single page"
-description: "A single-page template for Jekyll based blogs (like what you'd use on github pages!)"
-source_link: "https://github.com/t413/SinglePaged"
-favicon:     #put a path like: "img/favicon.ico"
-touch_icon:  #put a path like: "img/apple-touch-icon.png"
-google_analytics_key: ## put YOUR key here to enable tracking! (blank to disable)
-
+title:       "FitNesse Eclipse"
+keywords:    "FitNesse, fitnesse-editor, fitnesse-eclipse, fit, github, eclipse"
+description: "Eclipse plugin for FitNesse"
+source_link: "https://github.com/fitnesse-eclipse/fitnesse-eclipse"
+favicon:     "img/fitnesse-eclipse.ico"
+touch_icon:  "img/fitnesse-eclipse-touch.png"
+google_analytics_key: UA-56774387-1
+url: http://fitnesse-eclipse.github.io
 
 ### template colors, used site-wide via css ###
 colors:
@@ -34,3 +34,7 @@ colors:
   orange:    '#fab125'
   turquoise: '#0fbfcf'
   
+# collections
+collections:
+  releases:
+    output: true
