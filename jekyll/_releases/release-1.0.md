@@ -4,7 +4,7 @@ releasedate: Unreleased
 ---
 **Validation** - !Include and Fixture class Validation
 
-**Global Key Bindings** - Key bindings will are now scoped within the whole workspace.  Previously Open FitNesse (Ctrl+Shift+Z) only used to work once you were in the editor.
+**Global Key Bindings** - Key bindings are now globally scoped within the whole workspace.  Previously Open FitNesse (Ctrl+Shift+Z) only used to work once you were in the editor.
 
 **Menu Changes** - The Global FitNesse menu has now gone.
 
