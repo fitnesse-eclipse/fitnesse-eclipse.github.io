@@ -1,3 +1,3 @@
-rm stable/*
+rm -rf stable/*
 
-cp nightly/* stable/
+cp -r nightly/* stable/
