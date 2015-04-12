@@ -28,13 +28,10 @@
         <li class="p-installation"><a href="#installation">Installation</a></li>
       
         
-        <li class="p-features"><a href="#features">Features</a></li>
+        <li class="p-userguide"><a href="#userguide">Userguide</a></li>
       
         
         <li class="p-releases"><a href="#releases">Releases</a></li>
-      
-        
-        <li class="p-development"><a href="#development">Development</a></li>
       
     </ul></nav>
 
@@ -48,8 +45,6 @@
 
 <h1 id="fitnesse-eclipse-plugin">FitNesse Eclipse Plugin</h1>
 <p>This plugin provides <a href="http://fitnesse.org" target="_blank">FitNesse</a> editing capabilities from within the eclipse workspace.</p>
-
-<p>See all the <a href="#features">features</a></p>
 
         </div>
       </div>
@@ -66,36 +61,60 @@
         </div>
         
         <div class="container center">
-          <h2 id="plugin-installation">Plugin Installation</h2>
-<p>This plugin can be installed from the <a href="http://marketplace.eclipse.org/" target="_blank">Eclipse Marketplace</a> or via following update site:</p>
+          <h4 id="the-plugin-can-be-installed-into-any-eclipse-luna-or-mars-running-under-java-17-or-greater">The plugin can be installed into any eclipse (Luna or Mars) running under Java 1.7 or greater.</h4>
+<p><br /></p>
 
-<!-- Stable (Recommended) - http://fitnesse-eclipse.github.io/stable -->
+<h2 id="eclipse-marketplace">Eclipse Marketplace</h2>
+<p>The plugin can be found on the <a href="http://marketplace.eclipse.org/content/fitnesse-eclipse" target="_blank">Eclipse Marketplace</a> and via the direct install link below.</p>
+
+<p><a href="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=2079849" class="drag" title="Drag to your running Eclipse workspace to install FitNesse Eclipse"><img src="https://marketplace.eclipse.org/sites/all/themes/solstice/_themes/solstice_marketplace/public/images/btn-install.png" alt="Drag to your running Eclipse workspace to install" /></a><br />
+<br /></p>
+
+<h2 id="direct-update-sites">Direct Update Sites</h2>
+<p>The following update sites can be used directly from eclipse</p>
+
+<p>Stable (Recommended) - http://fitnesse-eclipse.github.io/stable</p>
 
 <p>Nightly (Unstable) - http://fitnesse-eclipse.github.io/nightly</p>
-
-<h2 id="requirements">Requirements</h2>
-<p>Java SE 1.7</p>
-
-<p>Java Developer Tools (Optional)</p>
 
         </div>
       </div>
     
       
-      <div id="features" class="section p-features">
+      <div id="userguide" class="section p-userguide">
         
         <div class="subtlecircle sectiondivider faicon">
           <span class="fa-stack">
             <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-bars fa-stack-1x"></i>
+            <i class="fa fa-book fa-stack-1x"></i>
           </span>
-          <h5 class="icon-title">Features</h5>
+          <h5 class="icon-title">Userguide</h5>
         </div>
         
         <div class="container center">
-          <h3 id="syntax-highlighting">Syntax Highlighting</h3>
+          <p>Convert your project into a Fitnesse Project by right clicking on the project in the Package Explorer.</p>
 
-<h3 id="validation">Validation</h3>
+<p><img src="img/convert-fitnesse.png" alt="Convert to fitnesse" /></p>
+
+<h4 id="open-fitnesse-resource"><strong>Open Fitnesse Resource</strong></h4>
+<p>Quickly open fitnesse Suites, Test and Static Pages (<strong>Ctrl+Shift+Z / Command + Shift + Z</strong>)</p>
+
+<p><img src="img/open-resources.png" alt="Open Fitnesse Resource" /></p>
+
+<h3 id="format-fitnesse"><strong>Format Fitnesse</strong></h3>
+<p>Keep your fitnesse files tidy (<strong>Ctrl+Shift+F / Command + Shift + F</strong>) by formatting them within the editor.</p>
+
+<p><img src="img/format-fitnesse.png" alt="Format fitnesse" /></p>
+
+<h2 id="open-in-browser"><strong>Open in Browser</strong></h2>
+<p>Open the page in your operating systems default browser.</p>
+
+<p><img src="img/browser.png" alt="Open in Browser" /></p>
+
+<h3 id="preferences"><strong>Preferences</strong></h3>
+<p>Configure the default <strong>Host</strong> &amp; <strong>Root Directory</strong></p>
+
+<p><img src="img/preferences.png" alt="Preferences" /></p>
 
         </div>
       </div>
@@ -113,7 +132,23 @@
         
         <div class="container center">
           
-<h4><strong>Release 1.0 (Unreleased)</strong></h4>
+<h4><strong>Release 2.0 (Unreleased - In Development)</strong></h4>
+
+<p><strong>Visual Editor</strong> - create and edit pages in a visual editor.</p>
+
+<p>- - - - - - - -</p>
+
+<h4><strong>Release 1.1 (2nd April 2015)</strong></h4>
+
+<p><strong>Project specific editor</strong> - The editor will now only show on projects that have the correct project nature.</p>
+
+<p><strong>Fixture class linking</strong> - Whitespace is now correctly handled after the class name.</p>
+
+<p><strong>!Includes</strong> - Fixes an issue where includes starting with ‘&lt;’ were not resolved correctly.</p>
+
+<p>- - - - - - - -</p>
+
+<h4><strong>Release 1.0 (December 2014)</strong></h4>
 
 <p><strong>Validation</strong> - !Include and Fixture class Validation</p>
 
@@ -125,25 +160,8 @@
 
 <p><strong>Maven/Tycho</strong> - The build has now been converted to a maven/tycho, allowing the plugin to be built more easily by our build server.</p>
 
+<p>- - - - - - - -</p>
 
-        </div>
-      </div>
-    
-      
-      <div id="development" class="section p-development">
-        
-        <div class="subtlecircle sectiondivider faicon">
-          <span class="fa-stack">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-code fa-stack-1x"></i>
-          </span>
-          <h5 class="icon-title">Development</h5>
-        </div>
-        
-        <div class="container center">
-          <h4 id="development-is-carried-out-on-githubhttpsgithubcomfitnesse-eclipsefitnesse-eclipsetargetblank-view-search-and-raise-any-issueshttpsgithubcomfitnesse-eclipsefitnesse-eclipseissuestargetblank-you-come-across"><em>Development is carried out on <a href="https://github.com/fitnesse-eclipse/fitnesse-eclipse" target="_blank">GitHub</a>, view, search and raise any <a href="https://github.com/fitnesse-eclipse/fitnesse-eclipse/issues" target="_blank">issues</a> you come across.</em></h4>
-
-<p><a href="https://circleci.com/gh/fitnesse-eclipse/fitnesse-eclipse" target="_blank"><img src="https://circleci.com/gh/fitnesse-eclipse/fitnesse-eclipse.png?style=shield" alt="Circle CI" /></a></p>
 
         </div>
       </div>
@@ -154,12 +172,15 @@
       <div class="container">
         
         <ul>
-<li><a href="https://www.facebook.com/fitnesse.eclipse"><i class="fa fa-3x fa-facebook-square"></i></a></li>
-<li><a href="https://twitter.com/fitnesseclipse"><i class="fa fa-3x fa-twitter-square"></i></a></li>
-<li><a href="https://plus.google.com/b/108210868417129659158"><i class="fa fa-3x fa-google-plus-square"></i></a></li>
+<li><a href="https://www.facebook.com/fitnesse.eclipse" title="Facebook"><i class="fa fa-3x fa-facebook"></i></a></li>
+<li><a href="https://twitter.com/fitnesseclipse" title="Twitter"><i class="fa fa-3x fa-twitter"></i></a></li>
+<li><a href="https://plus.google.com/b/108210868417129659158" title="Google Plus"><i class="fa fa-3x fa-google-plus"></i></a></li>
+<li><a href="http://stackoverflow.com/questions/tagged/fitnesse-eclipse" title="Stack Overflow"><i class="fa fa-3x fa-stack-overflow"></i></a></li>
+<li><a href="https://groups.google.com/forum/#!forum/fitnesse-eclipse" title="Google Groups"><i class="fa fa-3x fa-users"></i></a></li>
 </ul>
+<p><br /></p>
 
-<h5 id="copyright-copy-2014-fitnesse-eclipse">Copyright © 2014 FitNesse Eclipse</h5>
+<h5 id="copyright-copy-2015-fitnesse-eclipse">Copyright © 2015 FitNesse Eclipse</h5>
 
 
       </div>

@@ -507,14 +507,6 @@ html { box-sizing: border-box; }
   
   
   
-  nav .p-development { border-color: lightblue; }
-  #development { background-color: lightblue !important; color: ; }
-  #development a { color: ; }
-  #development .sectiondivider { color: lightblue; }
-
-  
-  
-  
   nav .p-releases { border-color: grey; }
   #releases { background-color: grey !important; color: #f8f8f8; }
   #releases a { color: #f8f8f8; }
@@ -523,10 +515,10 @@ html { box-sizing: border-box; }
   
   
   
-  nav .p-features { border-color: #49a7e9; }
-  #features { background-color: #49a7e9 !important; color: ; }
-  #features a { color: ; }
-  #features .sectiondivider { color: #49a7e9; }
+  nav .p-userguide { border-color: #c869bf; }
+  #userguide { background-color: #c869bf !important; color: ; }
+  #userguide a { color: ; }
+  #userguide .sectiondivider { color: #c869bf; }
 
   
   
